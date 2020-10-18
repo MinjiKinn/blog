@@ -1,4 +1,4 @@
-## Welcome to GitHub Pages
+## 이렇게 하는 게 맞나...
 
 You can use the [editor on GitHub](https://github.com/MinjiKinn/blog/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
