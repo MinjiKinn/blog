@@ -1,18 +1,14 @@
 ## 今日は missing scripts: start と闘いました…負けました…
 
-最初はgithubのrepoに追加したREADME.mdがlocal領域にないってとこからエラーになりました
-検索したらcloneをダウンロードしてターミナルでpull(?) merge(?)してもう一回pushすればいいって書いてました
-その通りにやってみました
-まささんにも連絡したりして何とかpushまでは終わりました
+最初はgithubのrepoに追加したREADME.mdがlocal領域にないってとこからエラーになりました<br />
+検索したらcloneをダウンロードしてターミナルでpull(?) merge(?)してもう一回pushすればいいって書いてました<br />
+その通りにやってみました<br />
+まささんにも連絡したりして何とかpushまでは終わりました<br />
 
-その後の段階のpackage.jsonの修正 （"homepage", "predeploy", "deploy"の追加）でまた問題になりました
-package.jsonがpackage-lock.jsonになって修正できなくなちゃったんです T-T
-しかもサイトによって "predeploy"と　"deploy"の設定が違って
-私みたいに何もわからずコピペしてる人には意味がもるげそよでした
-
-
-
-
+その後の段階のpackage.jsonの修正 （"homepage", "predeploy", "deploy"の追加）でまた問題になりました<br />
+package.jsonがpackage-lock.jsonになって修正できなくなちゃったんです T-T<br />
+しかもサイトによって "predeploy"と　"deploy"の設定が違って<br />
+私みたいに何もわからずコピペしてる人には意味がもるげそよでした<br />
 
 
 ### T-T
@@ -35,30 +31,50 @@ Markdown is a lightweight and easy-to-use syntax for styling your writing. It in
   "homepage": "https://{githubユーザー名}/{リポジトリ名}",
   ...
   
-## Header 2
-### Header 3
+## 他のサイト
 
-- Bulleted
-- List
+"scripts":{ 
+  "predeploy": "react-scripts build", 
+  "deploy": "gh-pages -d build", 
+}
 
-1. Numbered
-2. List
+### また他のサイト
 
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+"scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "deploy": "gh-pages -b master -d build",
+    "predeploy": "npm run build" (혹은 yarn build)
+  }
+  
 ```
 
-なかなか治らなくて検索していろいろやってみる！を何度も繰り返してたら
+頑張ってもなかなか治らなくて検索して何かやってみるのを何度も繰り返してたら
 知らない間にreactのprojectが入ってるfileが勝手にcopyされ2つになってたり
-project folderの中身がバラバラになって上位のfolderに飛んでたり
-node modulesが消えたりbranchの名前を間違えて中身が混ざったり………T-T　ぐちゃぐちゃになっちゃいました　（ここまで4時間ぐらいかかりました…自分がバカすぎてホントに悲しい気持ちになりました）
+project folderの中身がバラバラになって下位のfolderに飛んでたり
+node modulesが消えたりbranchの名前が被っちゃって中身が混ざってたり………T-T　ぐちゃぐちゃになっちゃいました　（ここまで５時間ぐらいかかりました…自分がバカすぎてホントに悲しい気持ちになりました）
 
+もう
 ぐちゃぐちゃすぎて全部最初からやり直そう！と思い…どじょんどじょんしてた途中…
 npm start をうったら　missing scripts: start　というエラーが発生しました…
-検索したらこれは package.jsonの中の "sripts"の"start"部分が抜けてるか
+検索したらこれは package.jsonの中の "sripts"の"start"の部分が抜けてるか何かおかしいか…が原因だとみんな言ってました
+でももういろいろやってる中package.jsonもnode modulesも(多分他に大事なものも何個か)消され…
+startできなくてnpm installのやり直しもできず……(これが正解だったのかはわかりませんT-T)
+結局検索しても手を出せない状況になってしまいました　（もう夜…悲しすぎて泣きました…マジ首にしてください…）
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+npm startできないとreactを立ち上げるのもできなくて…
+しかたなくてまた最初からやり直しました
+今回は最初の宿題と今回の宿題が入ってるdirectoryじゃなくて
+全然無関係な遠いfolderにdirectoryを作ってcreate reactを最初からやり直したら
+！！！何かうまくいきました！
+
+そっから
+新しいとこに宿題をうつしてもう一度githubにpushしました
+今回はスムーズにできました！
+package.jsonの修正も何とかできました！
+最後のnpm run deployでちょっと
+
+
 
 ### Jekyll Themes
 
