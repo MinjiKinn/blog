@@ -97,8 +97,10 @@ html css bootstrap…fat light slim…<br />
 
 ### 宿題早く提出したいんですけど今hosting pageが…
 
+宿題はもう土曜の夕方に終わってるんですけど
+terminalとgithubとの戦いが終わらなくて……
 https://minjikinn.github.io/homework2/<br />
-の後ろにApp.jsとかつけてもcodeしか見えなくてT-T<br />
+の後ろにApp.jsとかつけてもcodeしか見えないんですけど T-T<br />
 どうすればいいですかㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠ<br />
 
 
