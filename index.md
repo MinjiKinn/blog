@@ -73,7 +73,7 @@ npm startできないとreactを立ち上げるのもできなくて…<br />
 今回はスムーズにできました！<br />
 package.jsonの修正も何とかできました！<br />
 最後のnpm run deployでちょっと迷ったんですけど（上で言ったdeployなんちゃらがサイトによって違ってT-T)<br />
-最後の段階までやってやっと何かいい印が出ました（ターミナルに…）<br />
+最後の段階までやってやっと何かいい感じの赤くない文字が出ました（ターミナルに…）<br />
 
 あとは住所とか設定して<br />
 https://minjikinn.github.io/homework2/<br />
@@ -87,7 +87,7 @@ homework2っていうrepoの名前だけ出てきたりしてます………<br 
 
 
 読んでてあきれましたよね………<br />
-本当にこんな人間に給料やるのはもったいないです………<br />
+本当にこんな人間に給料やるのはもったいないんで<br />
 いつでも首にしてください………<br />
 html css bootstrap…fat light slim…<br />
 先週の宿題のやつはmobileのサイズで作っててまだPCのサイズに反応するように作る方法とかも…早くやらなきゃいけないのに…<br />
@@ -98,7 +98,7 @@ html css bootstrap…fat light slim…<br />
 ### 宿題早く提出したいんですけど今hosting pageが…
 
 https://minjikinn.github.io/homework2/<br />
-の後ろにApp.jsとか入れてもcodeしか見えなくてT-T<br />
+の後ろにApp.jsとかつけてもcodeしか見えなくてT-T<br />
 どうすればいいですかㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠ<br />
 
 
