@@ -1,17 +1,40 @@
-## 이렇게 하는 게 맞나...
+## 今日は missing scripts: start と闘いました…負けました…
 
-You can use the [editor on GitHub](https://github.com/MinjiKinn/blog/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+最初はgithubのrepoに追加したREADME.mdがlocal領域にないってとこからエラーになりました
+検索したらcloneをダウンロードしてターミナルでpull(?) merge(?)してもう一回pushすればいいって書いてました
+その通りにやってみました
+まささんにも連絡したりして何とかpushまでは終わりました
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+その後の段階のpackage.jsonの修正 （"homepage", "predeploy", "deploy"の追加）でまた問題になりました
+package.jsonがpackage-lock.jsonになって修正できなくなちゃったんです T-T
+しかもサイトによって "predeploy"と　"deploy"の設定が違って
+私みたいに何もわからずコピペしてる人には意味がもるげそよでした
 
-### Markdown
+
+
+
+
+
+### T-T
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
 ```markdown
-Syntax highlighted code block
 
-# Header 1
+
+# まささんが教えてくれたサイト
+
+...
+  "scripts": {
+    ...
+    "predeploy" : "yarn run build",
+    "deploy": "gh-pages -d build"
+    ...
+  },
+  ...
+  "homepage": "https://{githubユーザー名}/{リポジトリ名}",
+  ...
+  
 ## Header 2
 ### Header 3
 
@@ -25,6 +48,15 @@ Syntax highlighted code block
 
 [Link](url) and ![Image](src)
 ```
+
+なかなか治らなくて検索していろいろやってみる！を何度も繰り返してたら
+知らない間にreactのprojectが入ってるfileが勝手にcopyされ2つになってたり
+project folderの中身がバラバラになって上位のfolderに飛んでたり
+node modulesが消えたりbranchの名前を間違えて中身が混ざったり………T-T　ぐちゃぐちゃになっちゃいました　（ここまで4時間ぐらいかかりました…自分がバカすぎてホントに悲しい気持ちになりました）
+
+ぐちゃぐちゃすぎて全部最初からやり直そう！と思い…どじょんどじょんしてた途中…
+npm start をうったら　missing scripts: start　というエラーが発生しました…
+検索したらこれは package.jsonの中の "sripts"の"start"部分が抜けてるか
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
